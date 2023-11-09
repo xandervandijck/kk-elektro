@@ -1,0 +1,25 @@
+.image-overlay  {
+    z-index: 33;
+    position : absolute;
+    padding: 50px 20px 50px 100px;
+    bottom: 50px;
+    left: 0;
+    z-index: 33;
+    background: rgb(241,146,12);
+    background: linear-gradient(274deg, rgba(241,146,12,1) 0%, rgba(241,146,12,0.9038209033613446) 49%, rgba(30,30,30,1) 100%);
+}
+@media screen and (max-width: 768px) {
+    .image-overlay{
+        padding: 15px 20px 10px 20px;
+        width: 90%;
+        p {
+            line-height: 1.4;
+        }
+    }
+    .image-container {
+        img {
+            height: 100vh !important;
+            object-fit: cover;
+        }
+    }
+}

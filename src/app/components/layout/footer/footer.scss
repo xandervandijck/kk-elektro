@@ -1,0 +1,45 @@
+.footer {
+    background: #0f0f0f;
+    padding: 50px 0px;
+    li {
+        list-style: disc;
+        line-height: 2;
+    }
+    ul {
+        padding: 0px 20px;
+    }
+    .social-icons {
+        font-size: 1.5rem;
+        a{
+            margin: 0px 10px;
+        }
+    }
+}
+.credits-content {
+    p {
+        margin: 0px;
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding-top: 30px !important;
+        .container {
+            .row {
+                .footer-content {
+                    text-align: left !important;
+                }
+                .footer-column  {
+                    text-align: left !important;
+                }
+            }
+        }
+    }
+    .credits-content {
+        text-align: center;
+        p {
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.about-us {
+    padding: 100px 0px;
+    img {
+      object-fit: cover;
+    }
+    .col-lg-6:nth-child(1) {
+        border-right: 2px solid white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us {
+        padding: 50px 0px;
+        .row {
+            flex-direction: column-reverse;
+            padding: 0px 10px;
+        }
+        .col-lg-6:nth-child(1) {
+            border-right: none;
+        }
+        .col-sm-12 {
+          padding: 0px !important;
+          img {
+            width: 100% !important;
+            height: 350px;
+            margin-bottom: 20px;;
+          }
+        }
+    }
+}

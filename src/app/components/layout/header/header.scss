@@ -1,0 +1,14 @@
+.offcanvas-header {
+    .btn-close {
+        background: none !important;
+        border: none !important;
+        &:hover {
+            background: none !important;
+            border: none !important;
+            outline: none !important;
+        }
+    }
+}
+.offcanvas.offcanvas-start {
+    max-width: 90% !important;
+}

@@ -1,0 +1,60 @@
+.bg-logo {
+  background: #333333;
+  overflow: hidden;
+}
+
+.logo-slider-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-slider {
+  display: flex;
+  animation: logoSlider 50s linear infinite;
+  width: 200%; /* Adjust the width to accommodate both sliders */
+}
+
+.logo-slider2 {
+  display: flex;
+  animation: logoSliderTwo 50s linear infinite;
+  width: 200%; /* Adjust the width to accommodate both sliders */
+  margin-left: -100%; /* Move it to the left to join with the first slider */
+}
+
+.logo-section-card {
+  width: 120px; /* Adjust the width of each logo card */
+  margin-right: 120px; /* Adjust the gap between logos as needed */
+}
+
+.logo-section-card:last-child {
+  margin-right: 0;
+}
+
+@keyframes logoSlider {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes logoSliderTwo {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo-slider2 {
+    display: none !important;
+  }
+  .logo-slider {
+    display: flex;
+    animation: logoSlider 20s linear infinite;
+    width: 200%; /* Adjust the width to accommodate both sliders */
+  }
+}
